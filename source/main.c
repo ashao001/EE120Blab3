@@ -72,6 +72,7 @@ if((PINB & 0x08) == 0x08){
 	}
 	
 	PORTC = countA;
+	countA = 0x00;
     }
     return 1;
 }
