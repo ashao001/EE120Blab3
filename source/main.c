@@ -21,53 +21,53 @@ int main(void) {
     unsigned char countA, tempA;
     countA = 0x00;
     while (1) {
-	if(PINA & 0x01 == 0x01){
+	if((PINA & 0x01) == 0x01){
 		countA++;
 	}	
-	if(PINA & 0x02 == 0x02){
+	if((PINA & 0x02) == 0x02){
 		countA++;
 	}
-	if(PINA & 0x04 == 0x04){
+	if((PINA & 0x04) == 0x04){
 		countA++;
 	}
-	if(PINA & 0x08 == 0x08){
+	if((PINA & 0x08) == 0x08){
 		countA++;
 	}
-	if(PINA & 0x10 == 0x10){
+	if((PINA & 0x10) == 0x10){
 		countA++;
 	}
-	if(PINA & 0x20 == 0x20){
+	if((PINA & 0x20) == 0x20){
 		countA++;
 	}
-	if(PINA & 0x40 == 0x40){
+	if((PINA & 0x40) == 0x40){
 		countA++;
 	}
-	if(PINA & 0x80 == 0x80){
+	if((PINA & 0x80) == 0x80){
 		countA++;
 	}	
 	//PINB
-	if(PINB & 0x01 == 0x01){
+	if((PINB & 0x01) == 0x01){
                 countA++;
 }
-	 if(PINB & 0x02 == 0x02){
+	 if((PINB & 0x02) == 0x02){
 countA++;
 }
-        if(PINB & 0x04 == 0x04){
+        if((PINB & 0x04) == 0x04){
 countA++; 
 }  
-if(PINB & 0x08 == 0x08){
+if((PINB & 0x08) == 0x08){
                 countA++;
 }
-        if(PINB & 0x10 == 0x10){
+        if((PINB & 0x10) == 0x10){
                 countA++;
 }
-        if(PINB & 0x20 == 0x20){
+        if((PINB & 0x20) == 0x20){
                 countA++;
         }
-        if(PINB & 0x40 == 0x40){
+        if((PINB & 0x40) == 0x40){
                 countA++;
         }
-	if(PINB & 0x80 == 0x80){
+	if((PINB & 0x80) == 0x80){
 		countA++;
 	}
 	
