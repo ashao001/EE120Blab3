@@ -1,7 +1,7 @@
 /*	Author: ashao001
  *  Partner(s) Name: 
- *	Lab Section:
- *	Assignment: Lab #  Exercise #
+ *	Lab Section:023
+ *	Assignment: Lab #3  Exercise #3
  *	Exercise Description: [optional - include for your own benefit]
  *
  *	I acknowledge all content contained herein, excluding template or example
@@ -99,6 +99,15 @@ if((PINB & 0x08) == 0x08){
 	}
 	if( (((PINA & 0x0D)==0x0D) && (lvlcnt == 3)) || (((PINA & 0x0E)==0x0E) && (lvlcnt == 3)) || (((PINA & 0x0F)==0x0F) && (lvlcnt == 4)) ){
 	PORTC = 0x3F;
+	}
+	//for exercise 3
+	if( (PINA & 0x30) == 0x30){
+	PORTC = PORTC | 0x80;
+	}	
+	else{
+	PORTC = ~PORTC;
+	PORTC = PORTC | 0x80;
+	PORTC = ~PORTC;
 	}
 
 	//PORTC = countA + countB;
