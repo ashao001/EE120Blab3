@@ -78,6 +78,10 @@ if((PINB & 0x08) == 0x08){
 	}
 	
 	//for exercise 2
+	if(PINA == 0x00){
+	PORTC = 0x40; //if all 0
+	}
+	
 	if((((PINA & 0x01)==0x01) || ((PINA & 0x02) == 0x02))&& (lvlcnt == 1 )){
 	PORTC = 0X60; //1 or 2
 	}
